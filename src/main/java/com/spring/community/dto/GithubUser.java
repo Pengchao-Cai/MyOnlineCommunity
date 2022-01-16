@@ -1,9 +1,9 @@
 package com.spring.community.dto;
 
 public class GithubUser {
-    private String name;
-    private String bio;
-    private long id;
+    String name;
+    Long id;
+    String biolo;
 
     public String getName() {
         return name;
@@ -13,19 +13,20 @@ public class GithubUser {
         this.name = name;
     }
 
-    public String getBio() {
-        return bio;
-    }
-
-    public void setBio(String bio) {
-        this.bio = bio;
-    }
-
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getBiolo() {
+        return biolo;
+    }
+
+    // Json.parseObject matches setAttribute with attribute in JSON
+    public void setBio(String bio) {
+        this.biolo = bio;
     }
 }
